@@ -23,7 +23,8 @@ body {
 }
 
 nav{
-  display: flex;
+  display: flex 1 0 0;
+  flex-direction: column;
   background-color: lightblue;
 }
 main section {
