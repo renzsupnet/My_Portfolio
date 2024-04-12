@@ -1,10 +1,13 @@
 * {
   box-sizing: border-box;
 }
+
+/* Enables smooth scrolling to different sections of the page */
 html{
   scroll-behavior: smooth;
 }
 
+/* Rounded the profile picture */
 header img{
   border-radius: 40%;
 }
@@ -12,6 +15,13 @@ body {
   font-family: Arial;
   margin: 0;
 }
+
+/* Wanted the section headers to take up 100% width */
+#aboutme, #portfolio{
+  min-width: 100%;
+  text-align: center;
+}
+
 nav{
   display: flex;
   background-color: lightblue;
@@ -26,6 +36,8 @@ nav a {
   text-decoration: none;
   text-align: center;
 }
+
+/* display:flex makes it that elements that don't fit go to the bottom rather than sticking out awkwardly*/
 main {
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +57,8 @@ main {
 .main-header img{
   margin-right: 25px;
 }
+
+/* flex 1 0 0 makes it that cards are sized equally */
 .card {
   flex: 1 0 0;
   padding: 10px;
@@ -53,6 +67,7 @@ main {
   border-width: 1px;
 }
 
+/* on hover, the card is resized and highlighted by a box-shadow */
 .card:hover{
   box-shadow: 25px 10px 20px 20px black;
   flex: 2 0 0;
