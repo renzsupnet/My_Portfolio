@@ -20,6 +20,7 @@ body {
 #aboutme, #portfolio{
   min-width: 100%;
   text-align: center;
+  flex: 1 0 0;
 }
 
 nav{
@@ -85,3 +86,4 @@ main {
   min-width: 400px;
   margin-top: 2%;
 }
+
