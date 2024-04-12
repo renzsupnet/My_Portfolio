@@ -27,7 +27,9 @@ nav{
   display: flex 1 0 0;
   flex-direction: column;
   background-color: lightblue;
+  justify-content: left;
 }
+
 main section {
   background-color: lightblue;
 }
@@ -37,6 +39,11 @@ nav a {
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
+}
+
+/* Added effects on nav when hovering pointer */
+nav a:hover{
+  background: #fff;
 }
 
 /* display:flex makes it that elements that don't fit go to the bottom rather than sticking out awkwardly*/
