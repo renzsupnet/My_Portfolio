@@ -24,9 +24,10 @@ body {
 }
 
 nav{
-  display: flex 1 0 0;
-  flex-direction: column;
-  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 20%;
   justify-content: left;
 }
 
@@ -35,6 +36,9 @@ main section {
 }
 
 nav a {
+  background-color: lightblue;
+  flex: 1;
+  border-style: solid;
   color: #13293d;
   padding: 14px 20px;
   text-decoration: none;
@@ -94,3 +98,10 @@ main {
   margin-top: 2%;
 }
 
+@media (max-width: 1165px) {
+  nav{
+  flex-direction: column;
+  flex: 1;
+  align-items: stretch;
+  }
+}
