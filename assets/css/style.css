@@ -71,10 +71,15 @@ main {
   margin-right: 25px;
 }
 
-/* flex 1 0 0 makes it that cards are sized equally */
+/* first card is bigger */
+.card:first-child {
+  flex-basis: 100%;
+  width: 100%;
+}
 
+/* flex 1 0 0 makes it that cards are sized equally */
 .card {
-  flex: 1 0 calc(33.333% - 20px); /* Adjust the percentage based on how many cards you want per row */
+  flex: 1 0 calc(33.333% - 20px); 
   padding: 10px;
   text-align: center;
   border-style: solid;
@@ -83,13 +88,9 @@ main {
   box-sizing: border-box;
 }
 
-.card:first-child {
-  flex-basis: 100%;
-  width: 100%;
-}
 
 
-/* on hover, the card is resized and highlighted by a box-shadow */
+/* on hover, the card is highlighted by a box-shadow */
 .card:hover{
   box-shadow: 25px 10px 20px 20px black;
   flex: 2 0 0;
