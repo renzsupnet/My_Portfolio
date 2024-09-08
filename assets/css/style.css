@@ -74,7 +74,7 @@ main {
 /* first card is bigger */
 .card:first-child {
   flex-basis: 100%;
-  width: 100%;
+  width: 75%;
 }
 
 /* flex 1 0 0 makes it that cards are sized equally */
