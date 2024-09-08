@@ -54,7 +54,9 @@ nav a:hover{
 main {
   display: flex;
   flex-wrap: wrap;
-  border-top-style:ridge;
+  justify-content: center;
+  align-items: center;
+  border-top-style: ridge;
   border-width: 2%;
 }
 
@@ -71,11 +73,7 @@ main {
   margin-right: 25px;
 }
 
-/* first card is bigger */
-.card:first-child {
-  flex-basis: 100%;
-  width: 75%;
-}
+
 
 /* flex 1 0 0 makes it that cards are sized equally */
 .card {
@@ -85,7 +83,19 @@ main {
   border-style: solid;
   border-width: 1px;
   margin: 10px;
+  max-width: 800px;
   box-sizing: border-box;
+  min-height: 680px;
+}
+
+/* first card is bigger */
+#datawarehouse {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-basis: 100%;
+  width: 100%;
+  max-width: 2160px;
 }
 
 
@@ -93,7 +103,6 @@ main {
 /* on hover, the card is highlighted by a box-shadow */
 .card:hover{
   box-shadow: 25px 10px 20px 20px black;
-  flex: 2 0 0;
 }
 
 .card header {
@@ -104,6 +113,7 @@ main {
 
 .card img {
   width: 100%;
+  max-width: 800px;
   min-width: 400px;
   margin-top: 2%;
 }
