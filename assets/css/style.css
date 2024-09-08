@@ -72,13 +72,22 @@ main {
 }
 
 /* flex 1 0 0 makes it that cards are sized equally */
+
 .card {
-  flex: 1 0 0;
+  flex: 1 0 calc(33.333% - 20px); /* Adjust the percentage based on how many cards you want per row */
   padding: 10px;
   text-align: center;
   border-style: solid;
   border-width: 1px;
+  margin: 10px;
+  box-sizing: border-box;
 }
+
+.card:first-child {
+  flex-basis: 100%;
+  width: 100%;
+}
+
 
 /* on hover, the card is resized and highlighted by a box-shadow */
 .card:hover{
